@@ -1,4 +1,4 @@
-package aesUsingCipherclass;
+package org.gradle;
 
 import java.security.Key;
 import java.util.Base64;
@@ -35,7 +35,6 @@ class AESEncryptDecrypt
     private static Key generateKey(String keyValueAsString) throws Exception 
     {
     	byte[] keyValue = keyValueAsString.getBytes("UTF_16");
-    	System.out.println(keyValue.length);
         Key key = new SecretKeySpec(keyValue, EncryptionAlgo);
         return key;
     }

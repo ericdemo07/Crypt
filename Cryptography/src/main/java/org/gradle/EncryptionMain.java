@@ -1,4 +1,4 @@
-package aesUsingCipherclass;
+package org.gradle;
 
 public class EncryptionMain 
 {	
@@ -12,7 +12,6 @@ public class EncryptionMain
 		/*Key has to be a string of length 7, it will give 128 bit encryption
 		 *  (16*8)
 		 */
-		System.out.println("Str len : "+keyvalue.length());
 		try
 		{
 			String encryptedData = encryption.encrypt(data,keyvalue);
